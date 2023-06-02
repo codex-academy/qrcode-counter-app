@@ -6,3 +6,20 @@
     margin: 1em;
     padding: 1em;
 }
+
+
+.parts {
+    display : flex;
+}
+
+.scanner-section {
+    background-color: grey;
+    padding: 1em;
+}
+
+.counter-section{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 0.25em;
+    border : 1px solid;
+}

@@ -23,6 +23,13 @@ function onScanSuccess(decodedText, decodedResult) {
     if (decodedText == "plus") {
         counter.increment();
         counterElem.innerText = counter.value();
+        
+        html5QrcodeScanner.pause();
+
+        setTimeout(function(){
+            html5QrcodeScanner.resume();
+        }, 1000);
+
     } else if (decodedText == "minus") {
         counter.decrement();
         counterElem.innerText = counter.value();
